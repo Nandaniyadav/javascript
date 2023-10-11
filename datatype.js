@@ -9,9 +9,9 @@
 
 
 // //Number
-// let num = 2+2;
-// console.log(num)
-// console.log(typeof(num))
+let num = 2+2;
+console.log(num)
+console.log(typeof(num))
 
 // //Undefind
 // let und ;
