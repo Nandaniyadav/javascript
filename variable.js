@@ -1,9 +1,9 @@
 // //var
-var a = 5;
-a = 6;
-var a = 9;
-var b = 7;
-console.log(a);
+// var a = 5;
+// a = 6;
+// var a = 9;
+// var b = 7;
+// console.log(a);
 
 // //let
 // let a1=5;
@@ -13,3 +13,10 @@ console.log(a);
 // //const
 // const a2=5;
 // console.log(a2)
+
+
+
+
+
+
+
