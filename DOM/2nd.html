@@ -19,9 +19,19 @@
     </div>
     <script>
         const parent = document.querySelector(".parent")
-        console.log(parent);
-        console.log(parent.children);
-        console.log(parent.children[1]);
+        // console.log(parent);
+        // console.log(parent.children);
+        // console.log(parent.children[1]);
+
+        // for (let i = 0; i < parent.children.length - 1; i++) {
+        //     console.log(parent.children[i].innerHTML)
+        // }
+
+        // console.log(parent.firstElementChild.innerHTML);
+        // console.log(parent.lastElementChild);
+        console.log("Nodes : ", parent.childNodes)
+
+        parent.children[1].style.color = "red";
     </script>
 </body>
 
