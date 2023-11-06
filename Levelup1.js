@@ -16,4 +16,3 @@ for (i = 0; i <= arr.length - 1; i++) {
 //console.log(sum );
 //console.log(count );
 console.log(sum / count);
-
