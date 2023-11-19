@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Refer by name attribute</title>
+    <script>
+        function bodyload() {
+            pic.src = "images/2.jpg"
+            home.btnName.value = "Resister"
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img height="250px" width="400px" name="pic">
+    </div>
+    <div>
+        <form name="home">
+            Name<input type="text">
+            <input type="button" name="btnName">
+        </form>
+    </div>
+</body>
+
+</html>
