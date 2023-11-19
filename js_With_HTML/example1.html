@@ -1,8 +1,26 @@
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <img src="images/2.jpg" height="200px" width="300px"/>
-    </body>
+
+<head>
+    <title>Refer by DOM and BOM</title>
+    <script>
+        function bodyload() {
+            document.images[0].src = "images/2.jpg";
+            document.forms[0].elements[1].value = "Register";
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img height="200px" width="300px" border="2" />
+    </div>
+    <div>
+        <form>
+            Name: <input type="text">
+            <input type="button">
+        </form>
+    </div>
+
+</body>
+
 </html>
