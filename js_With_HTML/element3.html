@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refer by using ID name</title>
+    <script>
+        function bodyload() {
+            document.getElementById("img").src = "images/2.jpg"
+            document.getElementById("btn").value = "Resister"
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img id="img" height="200px" width="350px">
+    </div>
+    <div>
+        <form>
+            Name: <input type="text" id="txt">
+            <input type="button" id="btn">
+        </form>
+    </div>
+</body>
+
+</html>
