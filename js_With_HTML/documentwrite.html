@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>learn document.write function</title>
+    <script>
+        function clickRegister() {
+            name = document.getElementById("txt").value;
+            message = document.write("hello ! " + name);
+            images = document.getElementById("pic").src = "images/1.png";
+
+        }
+        function getimg() {
+            images = document.getElementById("pic").src = "images/1.png";
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            Enter Your Name : <input type="text" id="txt">
+            <input type="button" value="Click" onclick="clickRegister()">
+            <div id="msg"></div>
+            <input type="button" value="click for image" onclick="getimg()">
+            <img id="pic" height="200px" width="300px" border="2">
+        </div>
+    </form>
+</body>
+
+</html>
