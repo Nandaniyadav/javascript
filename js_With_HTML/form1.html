@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function register() {
+            let id = document.getElementById("txtid").value;
+            let name = document.getElementById("txtName").value;
+            let price = document.getElementById("txtPrice").value;
+            let Mfd = document.getElementById("txtMfd").value;
+            let yes = document.getElementById("optYes");
+            let no = document.getElementById("optNo");
+            if (yes.checked)
+                stock = yes.value
+            if (no.checked)
+                stock = no.value
+            let city = document.getElementById("lstcities").value;
+            document.getElementById("pdId").innerText = id;
+            document.getElementById("pdName").innerText = name;
+            document.getElementById("pdPrice").innerText = price;
+            document.getElementById("pdMfd").innerText = Mfd;
+            document.getElementById("pdStock").innerText = stock;
+            document.getElementById("pdCity").innerText = city;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <fieldset id="showregister">
+            <legend>Register Product</legend>
+            <dl>
+                <dt>Product id</dt>
+                <dd><input type="number" min="1" max="10" id="txtid"></dd>
+                <dt>Product Name</dt>
+                <dd><input type="text" id="txtName"></dd>
+                <dt>Product Price</dt>
+                <dd><input type="range" min="1000" max="5000" id="txtPrice"></dd>
+                <dt>Product Manufacture</dt>
+                <dd><input type="date" id="txtMfd"></dd>
+                <dt>Is in Stock</dt>
+                <dd><input type="radio" name="stock" id="optYes" value="Available">Yes
+                    <input type="radio" name="stock" id="optNo" value="out of Stock">No
+                </dd>
+                <dt>Shipped to</dt>
+                <dd><select id="lstcities">
+                        <option value="delhi">Delhi</option>
+                        <option value="Hydrabaad">Hydrabaad</option>
+                    </select></dd>
+            </dl>
+            <br>
+            <input type="button" value="Register" onclick="register()">
+        </fieldset>
+        <br>
+
+        <fieldset id="showdetails">
+            <legend>Product Details</legend>
+            <table width="400" border="1">
+                <tr>
+                    <td>Prodect ID</td>
+                    <td id="pdId"></td>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td id="pdName"></td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td id="pdPrice"></td>
+                </tr>
+                <tr>
+                    <td>Product Manufacture</td>
+                    <td id="pdMfd"></td>
+                </tr>
+                <tr>
+                    <td>Is in Stock</td>
+                    <td id="pdStock"></td>
+                </tr>
+                <tr>
+                    <td>Shipped to</td>
+                    <td id="pdCity"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
