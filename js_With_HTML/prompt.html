@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function createfun() {
+            let name = prompt("Enter folder Name","create folder")
+            let msg = document.getElementById("msg")
+            if (name == null) {
+                document.write("Folder canceled")
+            } else { document.write("create folder  name : " + name) }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="button" value="Click me" onclick="createfun()">
+            <div id="msg"></div>
+        </div>
+    </form>
+</body>
+
+</html>
