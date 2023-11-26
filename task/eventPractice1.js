@@ -1,10 +1,14 @@
-let btn = document.querySelector("#btn");
+let modebtn = document.querySelector("#btn");
+let body = document.querySelector("body");
 let curmode = "light";
-btn.addEventListener("click", () => {
+
+modebtn.addEventListener("click", () => {
   if (curmode === "light") {
-   curmode="dark";
+    curmode = "dark";
+    body.style.backgroundColor = "Black";
   } else {
-   curmode="light";
+    curmode = "light";
+    body.style.backgroundColor = "white";
   }
-  console.log(curmode)
+  console.log(curmode);
 });
